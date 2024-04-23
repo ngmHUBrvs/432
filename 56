@@ -1,0 +1,241 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+local MBMXUI = Instance.new("ScreenGui")
+local MBM_FRAME = Instance.new("Frame")
+local MBM_BUTTON_TEXT = Instance.new("TextButton")
+local MBM_LABEL_TEXT = Instance.new("TextLabel")
+local MBM_TEXT_BUTTON = Instance.new("TextButton")
+local MBM_BTT_DSC = Instance.new("TextButton")
+local MBM_AVT = Instance.new("ImageLabel")
+local MBM_TEXT_LABEL = Instance.new("TextLabel")
+local MBM_TLB_FRT = Instance.new("TextLabel")
+local MBM_TGCLUIG = Instance.new("ImageButton")
+local CLS_MBM = Instance.new("ImageButton")
+local MBM_CLSON = Instance.new("Frame")
+local TBT_MBM = Instance.new("TextButton")
+local MBM_TXT = Instance.new("TextButton")
+local TLB_MBM = Instance.new("TextLabel")
+
+-- Properties:
+
+MBMXUI.Name = "MBMXUI"
+MBMXUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MBMXUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MBM_FRAME.Name = "MBM_FRAME"
+MBM_FRAME.Parent = MBMXUI
+MBM_FRAME.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MBM_FRAME.BackgroundTransparency = 0.380
+MBM_FRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_FRAME.BorderSizePixel = 0
+MBM_FRAME.Position = UDim2.new(0.273972601, 0, 0.219512194, 0)
+MBM_FRAME.Size = UDim2.new(0, 350, 0, 261)
+
+MBM_BUTTON_TEXT.Name = "MBM_BUTTON_TEXT"
+MBM_BUTTON_TEXT.Parent = MBM_FRAME
+MBM_BUTTON_TEXT.BackgroundColor3 = Color3.fromRGB(141, 141, 141)
+MBM_BUTTON_TEXT.BackgroundTransparency = 0.450
+MBM_BUTTON_TEXT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_BUTTON_TEXT.BorderSizePixel = 0
+MBM_BUTTON_TEXT.Position = UDim2.new(0.143835619, 0, 0.192972615, 0)
+MBM_BUTTON_TEXT.Size = UDim2.new(0, 75, 0, 50)
+MBM_BUTTON_TEXT.Font = Enum.Font.Arcade
+MBM_BUTTON_TEXT.Text = "ON"
+MBM_BUTTON_TEXT.TextColor3 = Color3.fromRGB(3, 37, 255)
+MBM_BUTTON_TEXT.TextSize = 25.000
+
+MBM_LABEL_TEXT.Name = "MBM_LABEL_TEXT"
+MBM_LABEL_TEXT.Parent = MBM_FRAME
+MBM_LABEL_TEXT.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+MBM_LABEL_TEXT.BackgroundTransparency = 1.000
+MBM_LABEL_TEXT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_LABEL_TEXT.BorderSizePixel = 0
+MBM_LABEL_TEXT.Position = UDim2.new(0.373972595, 0, 0, 0)
+MBM_LABEL_TEXT.Size = UDim2.new(0, 91, 0, 50)
+MBM_LABEL_TEXT.Font = Enum.Font.LuckiestGuy
+MBM_LABEL_TEXT.Text = "MBM AUTO FRUIT FINDER"
+MBM_LABEL_TEXT.TextColor3 = Color3.fromRGB(0, 207, 162)
+MBM_LABEL_TEXT.TextSize = 20.000
+
+MBM_TEXT_BUTTON.Name = "MBM_TEXT_BUTTON"
+MBM_TEXT_BUTTON.Parent = MBM_FRAME
+MBM_TEXT_BUTTON.BackgroundColor3 = Color3.fromRGB(141, 141, 141)
+MBM_TEXT_BUTTON.BackgroundTransparency = 0.450
+MBM_TEXT_BUTTON.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_TEXT_BUTTON.BorderSizePixel = 0
+MBM_TEXT_BUTTON.Position = UDim2.new(0.143835619, 0, 0.463134289, 0)
+MBM_TEXT_BUTTON.Size = UDim2.new(0, 75, 0, 50)
+MBM_TEXT_BUTTON.Font = Enum.Font.Arcade
+MBM_TEXT_BUTTON.Text = "OFF"
+MBM_TEXT_BUTTON.TextColor3 = Color3.fromRGB(255, 0, 4)
+MBM_TEXT_BUTTON.TextSize = 25.000
+
+MBM_BTT_DSC.Name = "MBM_BTT_DSC"
+MBM_BTT_DSC.Parent = MBM_FRAME
+MBM_BTT_DSC.BackgroundColor3 = Color3.fromRGB(141, 141, 141)
+MBM_BTT_DSC.BackgroundTransparency = 0.450
+MBM_BTT_DSC.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_BTT_DSC.BorderSizePixel = 0
+MBM_BTT_DSC.Position = UDim2.new(0.086301364, 0, 0.733295977, 0)
+MBM_BTT_DSC.Size = UDim2.new(0, 121, 0, 41)
+MBM_BTT_DSC.Font = Enum.Font.Garamond
+MBM_BTT_DSC.Text = "https://dsc.gg/m1m"
+MBM_BTT_DSC.TextColor3 = Color3.fromRGB(150, 17, 194)
+MBM_BTT_DSC.TextSize = 17.000
+
+MBM_AVT.Name = "MBM_AVT"
+MBM_AVT.Parent = MBM_FRAME
+MBM_AVT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MBM_AVT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_AVT.BorderSizePixel = 0
+MBM_AVT.Position = UDim2.new(0.575342476, 0, 0.192972615, 0)
+MBM_AVT.Size = UDim2.new(0, 100, 0, 100)
+MBM_AVT.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+MBM_TEXT_LABEL.Name = "MBM_TEXT_LABEL"
+MBM_TEXT_LABEL.Parent = MBM_FRAME
+MBM_TEXT_LABEL.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MBM_TEXT_LABEL.BackgroundTransparency = 1.020
+MBM_TEXT_LABEL.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_TEXT_LABEL.BorderSizePixel = 0
+MBM_TEXT_LABEL.Position = UDim2.new(0.575342476, 0, 0.617512405, 0)
+MBM_TEXT_LABEL.Size = UDim2.new(0, 100, 0, 50)
+MBM_TEXT_LABEL.Font = Enum.Font.SourceSans
+MBM_TEXT_LABEL.Text = "hi ... !"
+MBM_TEXT_LABEL.TextColor3 = Color3.fromRGB(255, 191, 0)
+MBM_TEXT_LABEL.TextSize = 18.000
+
+MBM_TLB_FRT.Name = "MBM_TLB_FRT"
+MBM_TLB_FRT.Parent = MBM_FRAME
+MBM_TLB_FRT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MBM_TLB_FRT.BackgroundTransparency = 1.000
+MBM_TLB_FRT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_TLB_FRT.BorderSizePixel = 0
+MBM_TLB_FRT.Position = UDim2.new(0.575342476, 0, 0.733295977, 0)
+MBM_TLB_FRT.Size = UDim2.new(0, 100, 0, 50)
+MBM_TLB_FRT.Font = Enum.Font.SourceSans
+MBM_TLB_FRT.TextColor3 = Color3.fromRGB(0, 0, 0)
+MBM_TLB_FRT.TextSize = 20.000
+
+MBM_TGCLUIG.Name = "MBM_TGCLUIG"
+MBM_TGCLUIG.Parent = MBM_FRAME
+MBM_TGCLUIG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MBM_TGCLUIG.BackgroundTransparency = 1.000
+MBM_TGCLUIG.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_TGCLUIG.BorderSizePixel = 0
+MBM_TGCLUIG.Position = UDim2.new(-0.373972595, 0, -0.0771890506, 0)
+MBM_TGCLUIG.Size = UDim2.new(0.172602728, 0, 0.231567144, 0)
+MBM_TGCLUIG.Image = "rbxassetid://17222481411"
+
+CLS_MBM.Name = "CLS_MBM"
+CLS_MBM.Parent = MBM_FRAME
+CLS_MBM.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CLS_MBM.BackgroundTransparency = 1.000
+CLS_MBM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CLS_MBM.BorderSizePixel = 0
+CLS_MBM.Position = UDim2.new(0.920547903, 0, 0, 0)
+CLS_MBM.Size = UDim2.new(0.086301364, 0, 0.115783572, 0)
+CLS_MBM.Image = "http://www.roblox.com/asset/?id=6031094678"
+
+MBM_CLSON.Name = "MBM_CLSON"
+MBM_CLSON.Parent = CLS_MBM
+MBM_CLSON.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MBM_CLSON.BackgroundTransparency = 0.300
+MBM_CLSON.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_CLSON.BorderSizePixel = 0
+MBM_CLSON.Position = UDim2.new(-10.666667, 0, -5.04931677e-07, 0)
+MBM_CLSON.Size = UDim2.new(11.5873022, 0, 8.66666698, 0)
+
+TBT_MBM.Name = "TBT_MBM"
+TBT_MBM.Parent = MBM_CLSON
+TBT_MBM.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TBT_MBM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TBT_MBM.BorderSizePixel = 0
+TBT_MBM.Position = UDim2.new(0.115068488, 0, 0.692307651, 0)
+TBT_MBM.Size = UDim2.new(0, 80, 0, 50)
+TBT_MBM.Font = Enum.Font.SourceSans
+TBT_MBM.Text = "YES"
+TBT_MBM.TextColor3 = Color3.fromRGB(0, 0, 0)
+TBT_MBM.TextSize = 25.000
+
+MBM_TXT.Name = "MBM_TXT"
+MBM_TXT.Parent = MBM_CLSON
+MBM_TXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MBM_TXT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MBM_TXT.BorderSizePixel = 0
+MBM_TXT.Position = UDim2.new(0.632876694, 0, 0.692307651, 0)
+MBM_TXT.Size = UDim2.new(0, 80, 0, 50)
+MBM_TXT.Font = Enum.Font.SourceSans
+MBM_TXT.Text = "NO"
+MBM_TXT.TextColor3 = Color3.fromRGB(0, 0, 0)
+MBM_TXT.TextSize = 25.000
+
+TLB_MBM.Name = "TLB_MBM"
+TLB_MBM.Parent = MBM_CLSON
+TLB_MBM.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TLB_MBM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TLB_MBM.BorderSizePixel = 0
+TLB_MBM.Position = UDim2.new(0.0575342439, 0, 0.15384613, 0)
+TLB_MBM.Size = UDim2.new(0.87100935, 0, 0.333333284, 0)
+TLB_MBM.Font = Enum.Font.SourceSans
+TLB_MBM.Text = "Are you sure you want to turn off MBM?"
+TLB_MBM.TextColor3 = Color3.fromRGB(0, 0, 0)
+TLB_MBM.TextSize = 20.000
+
+-- Scripts:
+
+local function DOJN_fake_script() -- MBM_BUTTON_TEXT.LocalScript 
+	local script = Instance.new('LocalScript', MBM_BUTTON_TEXT)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ngmHUBrvs/432/main/234.lua"))()
+end
+coroutine.wrap(DOJN_fake_script)()
+local function HTACV_fake_script() -- MBM_TEXT_BUTTON.LocalScript 
+	local script = Instance.new('LocalScript', MBM_TEXT_BUTTON)
+
+	v:Destroy()
+	
+end
+coroutine.wrap(HTACV_fake_script)()
+local function GSPLC_fake_script() -- MBM_BTT_DSC.LocalScript 
+	local script = Instance.new('LocalScript', MBM_BTT_DSC)
+
+	setclipboard("https://discord.gg/Eh4Fwe8fgG")
+	
+end
+coroutine.wrap(GSPLC_fake_script)()
+local function FZBFE_fake_script() -- MBM_AVT.LocalScript 
+	local script = Instance.new('LocalScript', MBM_AVT)
+
+	game.Players:GetUserThumbnailAsync(
+	game.Players.LocalPlayer.UserId,
+	Enum.ThumbnailType.AvatarThumbnail,
+	Enum.ThumbnailSize.Size420x420)
+	
+end
+coroutine.wrap(FZBFE_fake_script)()
+local function XHZLR_fake_script() -- MBM_TGCLUIG.LocalScript 
+	local script = Instance.new('LocalScript', MBM_TGCLUIG)
+
+	game.CoreGui:FindFirstChild("MBMXUI").Enabled = not game.CoreGui:FindFirstChild("MBMXUI").Enabled
+end
+coroutine.wrap(XHZLR_fake_script)()
+local function IVMX_fake_script() -- TBT_MBM.LocalScript 
+	local script = Instance.new('LocalScript', TBT_MBM)
+
+	game:GetService("CoreGui").MBMXUI:Destroy()
+	game:GetService("CoreGui").ScreenGui:Destroy()
+	
+end
+coroutine.wrap(IVMX_fake_script)()
+local function PYTOVG_fake_script() -- MBM_TXT.LocalScript 
+	local script = Instance.new('LocalScript', MBM_TXT)
+
+	game.CoreGui:FindFirstChild("MBM_CLSON").Enabled =
+		not game.CoreGui:FindFirstChild("MBM_CLSON").Enabled
+	
+end
+coroutine.wrap(PYTOVG_fake_script)()
